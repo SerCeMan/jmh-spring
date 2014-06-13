@@ -29,6 +29,11 @@
             <artifactId>spring-context</artifactId>
             <version>4.0.5.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.0.5.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -61,7 +66,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.openjdk.jmh.Main</mainClass>
+                                    <mainClass>ru.serce.jmhspring.JMHSpringMain</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
